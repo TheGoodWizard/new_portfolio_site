@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  /* padding: 20px; */
+}
+
+/* Center Page */
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  /* margin: 8px -16px; */
+}
+
+/* Inserted to add padding btw each column */
+
+.row,
+.row > .column {
+  padding: 8px; 
+}
+
+/* Creating three equal columns that will float next to each other */
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+/* Used to clear floats after rows */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Adding "show" to filtered elements */
+
+.show {
+  display: block;
+
+}
+
+/* Button-styling */
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Adding grey background on mouse-over */
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Adding a darker background color to active button */
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Centering Images */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
