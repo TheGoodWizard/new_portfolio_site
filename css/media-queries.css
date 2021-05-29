@@ -19,29 +19,23 @@
    }
 
 
-    article {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: .5em;
-        margin-right: .5em;
-    }
 
 
     @media only screen and (max-width: 480px) {
 
         article {
             display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: .25em;
-        margin-right: .25em;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            /* margin-left: .01em;
+            margin-right: .01em; */
+        }
+
+        .card {
+            flex: 0 1 calc(77% - 1em);
         }
 
     }
