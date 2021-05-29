@@ -17,7 +17,7 @@ body {
     stroke-width: 2;
   }
 
-  #colorPath {
+  .color-path {
       position: absolute;
       z-index: -1;
   }
