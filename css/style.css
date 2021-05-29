@@ -249,7 +249,7 @@ ul li ul:focus {
   }
 
 
-#siteTitle {
+#site-title {
   display: flex;
   align-items: center;
   font-family: 'Infinity', sans-serif;
@@ -266,7 +266,7 @@ ul li ul:focus {
   line-height: 1em;
 }
 
-#siteTitleWrapper {
+#site-title-wrapper {
   width: 50%;
   display: flex;
 }
