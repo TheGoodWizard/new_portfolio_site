@@ -1,5 +1,4 @@
-/******* SITE BASE STYLES ******/
-/*=============================*/ 
+/*******=================== SITE BASE STYLES ======================******/
 
 
                              /* Mostly styles for more-common HTML elements */
@@ -8,17 +7,55 @@ html {
 }
 
 body {
-    height: 100%;
+    color: #e2e3ed;
+    font-family: 'Roboto', sans-serif;
+    /* height: 100%; */
     background-image: linear-gradient(#ffffff, #000000);
     background-repeat: no-repeat;
-    margin: 0;
+    /* margin: 0; */
     font-size: 1em;
     line-height: 1.5;
+    text-align: left;
+}
+
+ul,
+ol {
+  /* display: block; */
+  margin: 0;
+  /* padding-right: 0; */
+  padding: 0;
+  list-style-type: none;
+}
+
+
+h2 {
+  font-family: 'OstrichSans-Medium', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 1.125em;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 header {
@@ -58,15 +95,8 @@ header nav {
 }
 
 
-ul {
-  display: block;
-  margin: 0;
-  padding-right: 0;
-  padding: 25px;
-}
-
 li {
-  display: inline-block;
+  display: inline-flex;
   font-family: 'Syncopate', sans-serif;
   transition-duration: 0.5s;
   position: relative;
@@ -121,6 +151,11 @@ ul li ul:focus {
   opacity: 1;
   display: block;
 }
+
+/* .content-wrapper {
+  width: 90%;
+  margin: 0;
+} */
 
                      /* Styles for navigation animation and function */
 
