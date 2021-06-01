@@ -30,14 +30,14 @@ ol {
 
 h2 {
   font-family: 'OstrichSans-Medium', sans-serif;
-  font-size: 1.875em;
+  font-size: 2.25em;
   font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Syncopate', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.875em;
 }
 
 img {
@@ -70,25 +70,68 @@ article {
 }
 
 header {
+  width: 100%;
+  position: fixed;
+  padding: 15px 0;
+  z-index: 9999;
+}
+
+header .content-wrapper {
+  margin: 0;
   display: flex;
-  height: 150px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure h1 {
+  font-family: 'Infinity', sans-serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  text-shadow: 0.3px 0.3px 0.5px #07fdf4;
+  letter-spacing: 2.1px;
+  font-weight: 300;
+  color: #0994db;
+  line-height: 1em;
+}
+
+header figure a {
+  text-decoration: none;
+}
+
+/* .header-divider {
+  background: #07fdf4;
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+} */
+
+.neon {
+  display: none;
+}
+
+.wall {
+  display: none;
+}
+
+header,
+footer {
+  display: flex;
   background-color: #212121;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
-footer {
-  background-color: #000000;
-  opacity: 0.5;
-  position: bottom;
-  color: #FFFFFF;
-  text-align: center;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  border-width: medium;
-  border-color: #81001b;
-}
+
 
 /****** Header & Nav Styles ******/
 /*===============================*/
@@ -98,13 +141,26 @@ footer {
 
                                /* Styles for navitagion skeleton */
 header nav {
+  width: 90%;
+  font-size: 1.125em;
+  font-weight: 700;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-flow: row;
+  flex-flow: row wrap;
   text-transform: uppercase;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
 
 li {
   display: inline-flex;
@@ -147,7 +203,7 @@ a {
   left: 0;
   display: flex;
   min-width: 5rem;
-  margin-top: 1rem;
+  
 }
 
 ul li ul a:hover {
@@ -163,10 +219,11 @@ ul li ul:focus {
   display: block;
 }
 
-/* .content-wrapper {
-  width: 90%;
-  margin: 0;
-} */
+.content-wrapper {
+
+  max-width: 960px;
+
+}
 
                      /* Styles for navigation animation and function */
 
@@ -761,6 +818,16 @@ p {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
+
+@keyframes glow-plulse {
+  from {box-shadow: 0 0 1rem .25rem rgba(0,128,128,1);
+    height: .5rem;
+  }
+    to {box-shadow: 0 .25rem 5rem 1rem rgba(0,180,200,1);
+      height: .55rem;}
+}
+    
+    
 
 /* Button to close-out of Modal */
 
@@ -1363,50 +1430,4 @@ section.section.parallax h1 {
 
 
 
-
-/****** MEDIA QUERIES!!! ******/
-/*============================*/
-
-@media all and (min-width: 600px) {
-  section.section h2 {
-    font-size: 2rem;
-    font-family: 'Ostrich Sans', sans-serif;
-    font-weight: 500;
-    text-align: center;
-  }
-}
-
-@media all and (min-width: 960px) {
-  section.section.parallax h1 {
-    font-size: 3rem;
-    font-family: 'Syncopate', sans-serif;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .card {
-    flex: 0 1 calc(50% - 1em);
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .cards {
-    
-  }
-  .card {
-    flex: 0 1 calc(33.33% - 1em);
-  }
-}
-
-@media screen and (min-width: 52em) {
-  .full-width {
-
-  }
-}
 

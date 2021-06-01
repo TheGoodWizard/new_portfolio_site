@@ -19,9 +19,9 @@
    }
 
 
+/******************** ===--- SMALL SCREEN STYLES HERE!---=== ************************/
 
-
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 500px) {
 
         article {
             display:flex;
@@ -34,7 +34,57 @@
             margin-right: .01em; */
         }
 
-        header
+
+        header figure h1 {
+            font-size: 1em;
+        }
+
+        header nav ul li {
+            font-size: 1em;
+            margin-top: .5em;
+        }
+
+        header .content-wrapper {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            width: 100%;
+
+
+        }
+
+        /* .content-wrapper {
+            width: 90%;
+            margin: 50px 0;
+        } */
+
+         .neon {
+            display: flex; 
+            position: relative;
+            width: 95%;
+            margin: .05em 0 1em 0;
+            height: .3rem;
+            background: linear-gradient(#0994bd, #07fdf4, #099dbd);
+            box-shadow: 0 0 0 0 #222222;
+            border-radius: .5rem;
+            animation-name: glow-plulse;
+            animation-duration: 1.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0,0,0,1);  
+        }
+
+         .wall {
+            display: flex; 
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            background: green;
+            height: 100px;
+        }
 
         .card{
             flex: 0 1 calc(95% - 1em);
@@ -58,7 +108,35 @@
             font-size: 1.25rem;
             transform: rotate(0.25turn);
           }
+
+          
     }
 
 
+
+
+/**************====--- MEDIUM SCREEN/TAbLET STYLES HERE!!! ---====************/    
+
+    @media only screen and (min-width: 768px) {
+
+        header figure h1 {
+            font-size: 2.5em;
+        }
+
+        .content-wrapper {
+            max-width: 640px;
+            margin: 100px 0;
+        }
+
+        .neon {
+            display: none;
+        }
+
+        .wall {
+            display: none;
+        }
+
+        
+
+    }
     
