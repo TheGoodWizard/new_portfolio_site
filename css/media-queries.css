@@ -1,27 +1,130 @@
 /****** Made a separate CSS File for Media Queries.  Graceful degradation in action ;) ******/
 
-@media only screen and (max-width: 480px) {
+
+
+
+
+
+
     
-    /****** MOBILE STYLES HERE!!! GRACEFUL DEGRADATION OVA HERE!!!! ******/
+/****************** ===--- EXTRA SMALL DEVICES (phones, 600px and down) ---=== *********/
 
-    /****** General Styles || +++ Mobile +++ || ******/
+    @media only screen and (max-width: 600px) {
 
-    /****** ====== Intro Page ====== || +++ Mobile +++ || ******/
+        
+        article {
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            /* margin-left: .01em;
+            margin-right: .01em; */
+        }
 
-    /* canvas {
-        margin-top: 160px; */
+        header {
+            max-height: 100%;
+        }
+
+        header figure h1 {
+            font-size: .9em;
+        }
+
+        header nav {
+            width: 60%;
+            font-size: 1.125em;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+            text-transform: uppercase;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        header nav ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            font-size: 1em;
+            margin-top: .5em;
+        }
+
+        header .content-wrapper {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+
+
+        .neon {
+            display: flex; 
+            position: relative;
+            width: 95%;
+            margin: .05em 0 1em 0;
+            height: .3rem;
+            background: linear-gradient(#0994bd, #07fdf4, #099dbd);
+            box-shadow: 0 0 0 0 #222222;
+            border-radius: .5rem;
+            animation-name: glow-plulse;
+            animation-duration: 1.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0,0,0,1);  
+        }
+
+         .wall {
+            display: flex; 
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            background: green;
+            height: 100px;
+        }
+
+
+        .icon-bar {
+            position: fixed;
+            top: 90%;
+            -webkit-transform:  translateX(375%) rotate(0.75turn);;
+            -ms-transform: translateY(-30%) translateX(275%) rotate(0.75turn);;
+            transform: translateY(-30%) translateX(275%) rotate(0.75turn);
+            z-index: 99;
+          }
+
+          .icon-bar a {
+            display: flex;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 1.25rem;
+            transform: rotate(0.25turn);
+          }
+
+          .card{
+            flex: 0 1 calc(95% - 1em);
+        }
+
+
     }
 
-    /****** ====== Home Page ====== || +++ Mobile +++ || ******/
-
-   html {
-       font-size: 16px;
-   }
 
 
-/******************** ===--- SMALL SCREEN STYLES HERE!---=== ************************/
+/******************** ===--- SMALL DEVICES (portrait tablets and large phones, 600px and up) ---=== ************************/
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (min-width: 600px) {
 
         article {
             display:flex;
@@ -55,59 +158,13 @@
 
         }
 
-        /* .content-wrapper {
-            width: 90%;
-            margin: 50px 0;
-        } */
 
-         .neon {
-            display: flex; 
-            position: relative;
-            width: 95%;
-            margin: .05em 0 1em 0;
-            height: .3rem;
-            background: linear-gradient(#0994bd, #07fdf4, #099dbd);
-            box-shadow: 0 0 0 0 #222222;
-            border-radius: .5rem;
-            animation-name: glow-plulse;
-            animation-duration: 1.5s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-timing-function: cubic-bezier(0,0,0,1);  
-        }
-
-         .wall {
-            display: flex; 
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            left: 0;
-            background: green;
-            height: 100px;
-        }
 
         .card{
             flex: 0 1 calc(95% - 1em);
         }
 
-        .icon-bar {
-            position: fixed;
-            top: 90%;
-            -webkit-transform:  translateX(375%) rotate(0.75turn);;
-            -ms-transform: translateX(375%) rotate(0.75turn);;
-            transform: translateY(-10%)translateX(375%) rotate(0.75turn);
-            z-index: 99;
-          }
-
-          .icon-bar a {
-            display: flex;
-            text-align: center;
-            padding: 16px;
-            transition: all 0.3s ease;
-            color: white;
-            font-size: 1.25rem;
-            transform: rotate(0.25turn);
-          }
+        
 
           
     }
@@ -115,12 +172,21 @@
 
 
 
-/**************====--- MEDIUM SCREEN/TAbLET STYLES HERE!!! ---====************/    
+/**************====--- MEDIUM DEVICES (landscape tablets, 768px and up) ---====************/    
 
     @media only screen and (min-width: 768px) {
 
+        header figure {
+            width: 30%;
+        }
+
         header figure h1 {
             font-size: 2.5em;
+        }
+
+        header .content-wrapper {
+            width: 100%;
+            justify-content: space-around;
         }
 
         .content-wrapper {
@@ -136,7 +202,20 @@
             display: none;
         }
 
-        
+
+    }
+
+
+/**************====--- LARGE DEVICES (Laptops/Desktops, 992px and up.) ---====**********/
+
+    @media only screen and (min-width: 992px) {
+
+    }
+
+
+/*************====--- EXTRA LARGE DEVICES ( Large Laptops and Desktops, 1200px and up.) ---====*********/
+
+    @media only screen and (min-width: 1200px) {
 
     }
     
