@@ -98,13 +98,24 @@
             display: none;
           }
 
-          .icon-bar a {
+        .icon-bar a {
             display: none;
-          }
+        }
 
-          .card{
+        .card{
             flex: 0 1 calc(95% - 1em);
         }
+
+        .column {
+            flex: 0 1 calc(95% - 1em);
+            border-radius: 20px;
+        }
+
+        section .section .parallax h1 {
+            font-size: 1.8em;
+        }
+
+
 
         
 
@@ -155,6 +166,15 @@
 
         .card{
             flex: 0 1 calc(95% - 1em);
+        }
+
+        .column {
+            flex: 0 1 calc(95% - 1em);
+            border-radius: 20px;
+        }
+
+        section .section .parallax h1 {
+            font-size: 1.8em;
         }
 
         
