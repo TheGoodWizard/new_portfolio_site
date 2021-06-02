@@ -87,17 +87,14 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9000;
 }
 
-header .content-wrapper {
-  margin: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 90%;
-  flex-direction: row;
+.breathing-room {
+  margin-top: 145px;
 }
+
+
 
 header figure {
   width: 60%;
@@ -122,6 +119,14 @@ header figure a {
   text-decoration: none;
 }
 
+header .content-wrapper {
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  flex-direction: row;
+}
 
 .neon {
   display: none;
@@ -449,6 +454,12 @@ ul li ul:focus {
 /****** HOMEPAGE HERO SLIDESHOW STYLES ******/
 /*==========================================*/
 
+.hero-area {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
 .hero-img {
   vertical-align: middle;
@@ -457,7 +468,6 @@ ul li ul:focus {
 /* Position the image container (needed to position the left and right arrows) */
 .hero-container {
   position: relative;
-  z-index: 100;
 }
 
 /* Hide the images by default */
@@ -743,7 +753,6 @@ p {
   color: #0994db;
   text-shadow: 0.5px 0.5px 1px #07fdf4;
   font-weight: 500;
-
 }
 
 .active {
@@ -1142,7 +1151,7 @@ p {
 
 #about-me {
   width: 100%;
-  margin: 10px;
+  margin: 160px 10px 10px 10px;
   background-color: #e5e5e5;
   display:flex;
   justify-content: space-between;
