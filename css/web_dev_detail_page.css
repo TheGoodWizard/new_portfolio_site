@@ -49,7 +49,7 @@ body {
 /* Adding "show" to filtered elements */
 
 .show {
-  display: block;
+  display: flex;
 
 }
 
