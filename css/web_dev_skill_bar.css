@@ -60,10 +60,9 @@
 
 /************************ VANILLA JAVASCRIPT INTERACTIVE ANIMATION SKILL BARS **********************/
 
-.html {width: 65%; background-color: #4CAF50;} /* Green */
-.css {width: 30%; background-color: #2196F3;} /* Blue */
-.js {width: 4%; background-color: #f44336;} /* Red */
-.php {width: 1%; background-color: #808080;} /* Grey */
+.html-vjia {width: 44.9%; background-color: #4CAF50;} /* Green */
+.css-vjia {width: 29.5%; background-color: #2196F3;} /* Blue */
+.js-vjia {width: 25.6%; background-color: #f44336;} /* Red */
 
 /***************************************************************************/
 
