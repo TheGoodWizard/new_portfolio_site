@@ -116,9 +116,15 @@
         }
 
 
+/* =============------------ Approach Page Media Queries -------======== */
+
+        .right {
+            padding: 0.809em 3.236em 1.618em;
+            background-position: 50%;
+        }
 
         
-
+        
 
     }
 
